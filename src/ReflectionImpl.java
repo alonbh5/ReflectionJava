@@ -73,7 +73,7 @@ public class ReflectionImpl implements Investigator {
 
     @Override
     public boolean isExtending() {
-        return (instanceClass.getSuperclass().getSimpleName() != "Object");
+        return (!instanceClass.getSuperclass().getSimpleName().equals("Object"));
     }
 
     @Override
