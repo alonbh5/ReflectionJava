@@ -1,6 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        ReflectionImpl myReflector = new ReflectionImpl();
+        int x = 3;
+
+        myReflector.load(x);
+
+
     }
 }
